@@ -29,7 +29,6 @@ public class ProdutoTest {
         baseURI = "http://165.227.93.41"; //URI do servidor
         basePath = "/lojinha"; //caminho inicial da aplicação
 
-
         //Obter o token do usuario admin
         this.token = given() //Given = Dado que
                 .contentType(ContentType.JSON)
