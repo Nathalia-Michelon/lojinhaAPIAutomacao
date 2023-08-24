@@ -27,7 +27,7 @@ public class ProdutoTest {
     public void beforeEach(){
         //Configurando os dados da API Rest da Lojinha
         baseURI = "http://165.227.93.41"; //URI do servidor
-        basePath = "/lojinha-bugadagit add ."; //caminho inicial da aplicação
+        basePath = "/lojinha"; //caminho inicial da aplicação
 
 
         //Obter o token do usuario admin
