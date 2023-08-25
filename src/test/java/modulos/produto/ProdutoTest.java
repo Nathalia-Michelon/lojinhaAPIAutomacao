@@ -2,29 +2,22 @@ package modulos.produto;
 
 import dataFactory.ProdutoDataFactory;
 import dataFactory.UsuarioDataFactory;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pojo.ComponentePojo;
-import pojo.ProdutoPojo;
-import pojo.UsuarioPojo;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 @DisplayName("Testes de API Rest do Módulo de Produto")
 public class ProdutoTest {
 
-    private String token;// criando atributo privado da classe, pq vai usar em todos os testes
+    // criando atributo privado da classe, pq vai usar em todos os testes
+    private String token;
 
     @BeforeEach//antes de cada teste, faça algo...obter o token
     public void beforeEach(){
+
         //Configurando os dados da API Rest da Lojinha
         baseURI = "http://165.227.93.41"; //URI do servidor
         basePath = "/lojinha"; //caminho inicial da aplicação
