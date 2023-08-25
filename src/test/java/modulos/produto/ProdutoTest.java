@@ -21,10 +21,12 @@ import static org.hamcrest.Matchers.*;
 @DisplayName("Testes de API Rest do Módulo de Produto")
 public class ProdutoTest {
 
-    private String token;// criando atributo privado da classe, pq vai usar em todos os testes
+    // criando atributo privado da classe, pq vai usar em todos os testes
+    private String token;
 
     @BeforeEach//antes de cada teste, faça algo...obter o token
     public void beforeEach(){
+
         //Configurando os dados da API Rest da Lojinha
         baseURI = "http://165.227.93.41"; //URI do servidor
         basePath = "/lojinha"; //caminho inicial da aplicação
